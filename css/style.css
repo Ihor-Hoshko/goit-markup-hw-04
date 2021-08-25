@@ -344,8 +344,32 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-
   margin-top: 10px;
+}
+.icon-container {
+  display: flex;
+  height: 120px;
+  width: 270px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.icon-antenna-1 {
+  width: 70px;
+  height: 70px;
+}
+.icon-clock-1 {
+  width: 70px;
+  height: 70px;
+}
+.icon-diagram-1 {
+  width: 70px;
+  height: 70px;
+}
+.icon-astronaut-1 {
+  width: 70px;
+  height: 70px;
 }
 /* work чем мы занимаемся */
 
