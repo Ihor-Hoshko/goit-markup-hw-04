@@ -534,6 +534,9 @@ img {
   padding-bottom: 60px;
   padding-top: 60px;
 }
+.all-footer .container {
+  display: flex;
+}
 .all-footer .contacts-list {
   margin-top: 20px;
 }
@@ -566,17 +569,30 @@ img {
 .contact-footer:focus {
   color: var(--button-hover-color);
 }
-.social-address {
+.footer-flex {
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
-.social-address-title {
+.social-address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 70px;
+}
+.address-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.address-title {
+  color: var(--button-hover-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   justify-content: center;
+  margin-bottom: 20px;
 }
 .address-item {
   width: 44px;
