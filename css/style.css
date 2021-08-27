@@ -246,10 +246,12 @@ img {
 .filter-list-all .button:focus {
   background-color: var(--button-hover-color);
   color: var(--button-hover-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .filter-list-all .button.current {
   color: var(--button-hover-text-color);
   background-color: var(--button-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .filter-list .button {
   display: block;
@@ -300,6 +302,10 @@ img {
   margin-top: 30px;
   margin-left: 30px;
 }
+.project-list .item:hover,
+.project-list .item:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .project-list .project-list-title {
   color: var(--primary-text-color);
   font-weight: 700;
@@ -313,7 +319,6 @@ img {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
-
   margin-top: 4px;
 }
 /* advantage */
