@@ -127,6 +127,7 @@ img {
   font-style: normal;
   padding-left: 0px;
   margin-left: auto;
+  align-items: center;
 }
 
 .contacts-list .item + .item {
@@ -146,9 +147,10 @@ img {
   padding-bottom: 32px;
 }
 .contacts-list .contact.link {
-  display: block;
+  display: flex;
   padding-bottom: 32px;
   padding-top: 32px;
+  align-items: center;
 }
 
 .contacts-list .contact:hover,
@@ -162,6 +164,7 @@ img {
   line-height: 1.1;
   letter-spacing: 0.03em;
 }
+
 .contacts-list-adress:hover,
 .contacts-list-adress:focus {
   color: var(--button-hover-color);
@@ -302,10 +305,14 @@ img {
   margin-top: 30px;
   margin-left: 30px;
 }
-.project-list .item:hover,
-.project-list .item:focus {
+.project-list .link {
+  display: block;
+}
+.project-list .link:hover,
+.project-list .link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .project-list .project-list-title {
   color: var(--primary-text-color);
   font-weight: 700;
@@ -433,8 +440,6 @@ img {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 .team-list-description {
   color: var(--secondary-text-color);
@@ -449,6 +454,7 @@ img {
 .team-list-content {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 1px;
+  padding: 30px 32px 30px 32px;
   background-color: var(--button-hover-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -457,9 +463,9 @@ img {
   display: flex;
   justify-content: center;
   padding-left: 0px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px;
   margin-right: 32px;
-  margin-left: 32px;
+  margin-left: 32px; */
 }
 .social-item {
   width: 44px;
@@ -492,6 +498,7 @@ img {
 /* CLIENT SECTION */
 .client-list {
   display: flex;
+  padding-left: 0px;
 }
 .client-title {
   text-align: center;
@@ -509,6 +516,8 @@ img {
 }
 .client-link {
   display: flex;
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   align-items: center;
@@ -527,7 +536,6 @@ img {
 
 .client-icon {
   fill: #afb1b8;
-  margin: 16px 32px 16px 32px;
 }
 .client-icon:focus,
 .client-icon:hover {
@@ -541,6 +549,7 @@ img {
 }
 .all-footer .container {
   display: flex;
+  align-items: baseline;
 }
 .all-footer .contacts-list {
   margin-top: 20px;
@@ -580,15 +589,12 @@ img {
 }
 
 .social-address {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin-left: 70px;
 }
 .address-icons {
   display: flex;
   justify-content: center;
+  padding-left: 0px;
 }
 
 .address-title {
