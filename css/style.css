@@ -483,6 +483,51 @@ img {
 .social-link:focus .social-icon {
   fill: var(--button-hover-text-color);
 }
+
+/* CLIENT SECTION */
+.client-list {
+  display: flex;
+}
+.client-title {
+  text-align: center;
+  line-height: 1.17;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+.client-item {
+  width: 170px;
+  height: 92px;
+}
+.client-item + .client-item {
+  margin-left: 30px;
+}
+.client-link {
+  display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  border-color: var(--button-hover-color);
+  fill: var(--button-hover-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--button-hover-color);
+}
+
+.client-icon {
+  fill: #afb1b8;
+  margin: 16px 32px 16px 32px;
+}
+.client-icon:focus,
+.client-icon:hover {
+  fill: var(--button-hover-color);
+}
 /*LOGO in FOOTER*/
 .all-footer {
   background-color: #2f303a;
