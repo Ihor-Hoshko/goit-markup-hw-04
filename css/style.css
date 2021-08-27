@@ -566,3 +566,46 @@ img {
 .contact-footer:focus {
   color: var(--button-hover-color);
 }
+.social-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-address-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  justify-content: center;
+}
+.address-item {
+  width: 44px;
+  height: 44px;
+}
+.address-item + .address-item {
+  margin-left: 10px;
+}
+.address-link {
+  background-color: #44454e;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.address-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--button-hover-text-color);
+}
+
+.address-link:hover,
+.address-link:focus {
+  background-color: var(--button-hover-color);
+}
+.address-link:hover .address-icon,
+.address-link:focus .address-icon {
+  fill: var(--button-hover-text-color);
+}
